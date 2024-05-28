@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 20px;
+  padding-left: 30px;
+  justify-content: space-between;
+  background-color: rgb(103, 184, 246);
+}
+.logo-container > img {
+  width: 60px;
+  height: auto;
+  z-index: 999;
+}
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: large;
+  gap: 2rem;
+}
+.active {
+  display: none;
+}
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+.nav-items .active {
+  max-height: 300px;
+}
+@media (max-width: 768px) {
+  .active {
+    display: block;
+  }
+  .nav-items {
+    margin-right: 0px;
+    display: none;
+  }
+}
+
+/*  Slider */
+.container {
+  padding: 20px;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s ease-in-out;
+}
+.active {
+  margin-left: -300px;
+}
+.main_content {
+  list-style-type: none;
+  display: flex;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: large;
+  gap: 2rem;
+}
+.foot_content {
+  align-items: flex-end;
+}
+#tg {
+  position: static;
+  transition: 0.4s ease-in-out;
+  padding: 5px;
+}
+.bx {
+  font-size: 35px;
+}
+.move {
+  margin-left: 200px;
+}
+.faqs {
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.faqs > h1 {
+  margin-bottom: 100px;
+}
+.box {
+  border: none;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 50%;
+  padding: 20px;
+}
+.box > h3 {
+  cursor: pointer;
+}
+.Answer {
+  display: none;
+}
+.check {
+  display: block;
+}
+
+/* COlor Flipper CSS */
+.color-flipper-section {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+#color-flipper-btn {
+  all: unset;
+  margin-bottom: 10px;
+  border: 1px solid Black;
+  padding: 8px 15px;
+  border-radius: 90px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#color-flipper-btn:hover {
+  border: 1px solid aliceblue;
+  color: aliceblue;
+  background: #201710;
+}
+.color-flipper {
+  min-height: 600px;
+  width: 100%;
+}
+
+/* CSS FOR COUNTER */
+.Counter {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.Counter > h1 {
+  font-size: 50px;
+}
+#number {
+  font-size: 70px;
+}
+.counting-buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+.bx-plus {
+  background: aliceblue;
+  font-size: 42px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.bx-plus:hover {
+  color: green;
+  scale: 1.1;
+}
+
+.bx-minus {
+  background: aliceblue;
+  font-size: 42px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.bx-minus:hover {
+  color: red;
+  scale: 1.1;
+}
